@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.REACT_APP_BACKEND_URI;
+const BASE_URL = import.meta.env.VITE_REACT_APP_BACKEND_URI;
 
 export const addItemToServer = async (task, date) => {
   const response = await fetch(BASE_URL + "/api/todo", {
